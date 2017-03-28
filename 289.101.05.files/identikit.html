@@ -54,7 +54,7 @@
     <a id="eyes_down_btn">move eyes down</a>
     <a id="eyes_closer_btn">move eyes closer together</a>
     <a id="eyes_further_btn">move eyes further apart</a>
-    <a>hollow eyes</a>
+    <a id="eyes_hollow_btn">hollow eyes</a>
     <a>solid eyes</a>
     <a>big eyes</a>
     <a>small eyes</a>
@@ -104,10 +104,8 @@
     // move eyes closer together event listener
     document.getElementById('eyes_closer_btn').addEventListener('click', function() {
         eye_left_x += 10;
-
         document.getElementById('eye_left').style.left = eye_left_x + 'px';
         eye_right_x -= 10;
-
         document.getElementById('eye_right').style.left = eye_right_x + 'px';
       }
     );
